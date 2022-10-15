@@ -32,15 +32,17 @@ int main(void)
 					{
 						printf("Last digit of %d is %d and is greater 5\n", n, last);
 					}
-					else if (last < 6 )
+					else if (last < 6)
 					{
-						if (last !< 0)
+						if (last > 0)
 						{
 							printf("Last digit of %d is %d and is less than 6 and not 0\n", n, last);
+						}
+						else if (last == 0)
+						{
+							printf("Last digit of %d is %d and is 0\n", n, 0);
+						}
 					}
-					else if (last == 0)
-					{
-						printf("Last digit of %d is %d and is 0\n", n, 0);
 					return (0);
 
 }

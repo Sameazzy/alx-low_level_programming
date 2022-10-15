@@ -9,14 +9,14 @@
 int main(void)
 {
 	int number = 0;
-	char alpha = 'A';
+	char alpha = 'a';
 
 	while (number < 10)
 	{
 		putchar(number + '0');
 		number++;
 	}
-	while (alpha <= 'F')
+	while (alpha <= 'f')
 	{
 		putchar(alpha);
 		alpha++;

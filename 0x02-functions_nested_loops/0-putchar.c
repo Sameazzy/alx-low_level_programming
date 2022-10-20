@@ -8,13 +8,14 @@
  **/
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
+	int j = 0;
+
+	char str[] = "_putchar\n";
+		while(str[j] != '\0')
+		{
+			_putchar(str[j]);
+			j++;
+		}
+
 	return (0);
 }

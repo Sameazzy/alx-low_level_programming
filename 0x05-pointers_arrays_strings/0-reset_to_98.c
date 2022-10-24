@@ -8,7 +8,6 @@
  *
  * @n - the pointer
  *
- * The pointer
  * Return: Always 0.
  */
 

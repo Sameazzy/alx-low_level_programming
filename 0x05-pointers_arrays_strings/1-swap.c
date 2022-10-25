@@ -6,7 +6,9 @@
  *
  * swap values of pointers a and b
  *
- * @n - the pointer
+ * @a - pointer a
+ * @b - pointer b
+ * @c - int c
  *
  * Return: Always 0.
  */

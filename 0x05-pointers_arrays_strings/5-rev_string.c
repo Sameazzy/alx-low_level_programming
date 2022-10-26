@@ -20,7 +20,7 @@ void rev_string(char *s)
 		length++;
 	}
 
-	for (j = 0; j < length/2; j++)
+	for (j = 0; j < length / 2; j++)
 	{
 		hold = s[j];
 		s[j] = s[length - j - 1];

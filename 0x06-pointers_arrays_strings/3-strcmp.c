@@ -26,10 +26,13 @@ int _strcmp(char *s1, char *s2)
 			{
 				diff = s1[i] - s2[i];
 			}
-			else 
+			else
 				i++;
 		}
-		diff = s1[i - 1] - s2[i - 1];
+		else
+		{
+			diff = s1[i - 1] - s2[i - 1];
+		}
 	}
 
 	return (diff);

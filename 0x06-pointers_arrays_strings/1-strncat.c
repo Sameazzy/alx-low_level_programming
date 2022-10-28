@@ -27,16 +27,21 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		k++;
 	}
-
-	for  (i = 0; i < n; i++)
+	if(k >= n)
 	{
-		dest[j] = src[i];
-		j++;
-	}
-
-	if (k >= n)
-	{
+		for  (i = 0; i < n; i++)
+		{
+			dest[j] = src[i];
+			j++;			
+		}
 		dest[j] = '\0';
+	}
+	else
+	{
+		for (i = 0; src[i] != '\0'; i++)
+		{
+			dest[j] = src[i];
+		}
 	}
 	return (dest);
 }

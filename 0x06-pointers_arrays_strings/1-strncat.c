@@ -23,22 +23,24 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		j++;
 	}
+
 	for (i = 0; src[i] != '\0'; i++)
 	{
 		k++;
 	}
-	if(k >= n)
+
+	if (k >= n)
 	{
 		for  (i = 0; i < n; i++)
 		{
 			dest[j] = src[i];
-			j++;			
+			j++;
 		}
 		dest[j] = '\0';
 	}
 	else
 	{
-		for (i = 0; src[i] != '\0'; i++)
+		for (i = 0; i < n; i++)
 		{
 			dest[j] = src[i];
 		}

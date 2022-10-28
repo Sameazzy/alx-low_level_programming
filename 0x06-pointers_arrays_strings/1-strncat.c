@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * _strcat - check the code
+ * _strncat - check the code
  *
  * concatenate strings
  *
@@ -17,12 +17,16 @@ char *_strncat(char *dest, char *src, int n)
 {
 	int i;
 	int j = 0;
+	int k = 0;
 
 	for  (j = 0; dest[j] != '\0'; j++)
 	{
 		j++;
 	}
-	i = 0;
+	for (k = 0; src[k] != '\0'; k++)
+	{
+		k++;
+	}
 
 	for  (i = 0; i < n; i++)
 	{
@@ -30,5 +34,9 @@ char *_strncat(char *dest, char *src, int n)
 		j++;
 	}
 
+	if (k == n)
+	{
+		dest[j] = '\0';
+	}
 	return (dest);
 }
